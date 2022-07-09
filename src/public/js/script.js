@@ -65,15 +65,15 @@ function generarNoticiasInicio(data) {
 	var res = document.querySelector("#titulo");
 	res.innerHTML= `${data.results['0'].title} - Colegio - ${data.results['0'].pubDate}`;
   var res1 = document.querySelector("#descripcion");
-	res1.innerHTML= `${data.results['0'].description}`;
+	res1.innerHTML= `<h4>${data.results['0'].description}</h4>`;
   var res2 = document.querySelector("#titulodos");
 	res2.innerHTML= `${data.results['1'].title} - Colegio - ${data.results['1'].pubDate}`;
   var res3 = document.querySelector("#descripciondos");
-	res3.innerHTML= `${data.results['1'].description}`;
+	res3.innerHTML= `<h4>${data.results['1'].description}</h4>`;
   var res4 = document.querySelector("#titulotres");
 	res4.innerHTML= `${data.results['2'].title} - Colegio - ${data.results['2'].pubDate}`;
   var res5 = document.querySelector("#descripciontres");
-	res5.innerHTML= `${data.results['2'].description}`;
+	res5.innerHTML= `<h4>${data.results['2'].description}</h4>`;
   
 }
 
