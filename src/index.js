@@ -16,6 +16,6 @@ app.use(indexRoutes)
 app.use(express.static(join(__dirname, 'public')))
 
 
-app.listen(3000)
-console.log('El Servidor está escuchando en puerto 3000');
+app.listen(process.env.PORT || 3000)
+console.log('El Servidor está escuchando en puerto', process.env.PORT || 3000);
 
