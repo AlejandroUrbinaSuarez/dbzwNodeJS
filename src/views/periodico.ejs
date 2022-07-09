@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+    <title>Periodico</title>
+</head>
+<body>
+  <%- include('partials/navigation')%>
+    <div class="container-fluid" id="ini">
+        <div class="row">
+			<div class="col-sm-1 col-md-1"><img src="/img/dbz.png" width="100px"> </div>
+			<div class="col-9 col-md-9"><br><br>Periódico DBZ</div>
+      <div class="col-2 col-md-2" id="fecha"></div>
+		</div>
+    </div>
+
+  <div>
+    <div class="row">
+      <div class="col-sm-10 col-md-10" id="navbar">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+  <div class="container-fluid" id="navbar">
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav" id="navbar">
+        <a class="nav-link active" aria-current="page" href="#" id="active">Inicio</a>
+        <a class="nav-link" href="#">Salon</a>
+        <a class="nav-link" href="#">Colegio</a>
+        <a class="nav-link" href="#">Region</a>
+        <a class="nav-link" href="#">Tecnologia</a>
+        <a class="nav-link" href="#">Farandula</a>
+        <a class="nav-link" href="#">Deportes</a>
+        <a class="nav-link" href="#">Juegos</a>
+      </div>
+    </div>
+  </div>
+      </nav>
+    </div>
+      <div class="col-2 col-md-2">
+        <div class="card" id="gafas">
+          <div class="card-body">
+            <img src="/img/vegeta.png" width="25px" height="25px">
+          </div>
+    </div>
+    </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-sm-10 col-md-10">
+        <div class="card">
+          <div class="card-body">
+            <img id="imgCentrada" src="/img/freezer.png" width="100px">
+          </div>
+        </div>
+
+      <div>
+        <h1 id="titulo"></h1>
+        <div class="card">
+          <div class="card-body" id="descripcion"></div>
+        </div>
+      </div>
+      <div>
+        <h1 id="titulodos"></h1>
+        <div class="card">
+          <div class="card-body" id="descripciondos"></div>
+        </div>
+      </div>
+      <div>
+        <h1 id="titulotres"></h1>
+        <div class="card">
+          <div class="card-body" id="descripciontres"></div>
+        </div>
+      </div>
+      <div id="masnoticias"></div>
+        
+      </div>
+      <div class="col-2 col-md-2">
+        <div class="card" style="width: 18rem;">
+          <div class="card-header">
+            Deportes
+          </div>
+          <ul class="list-group list-group-flush">
+            <a class="list-group-item list-group-item-action" href="#" id="deportes"></a>
+            <a class="list-group-item list-group-item-action" href="#"id="deportesdos"></a>
+            <a class="list-group-item list-group-item-action" href="#" id="deportestres"></a>
+          </ul>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <div class="card-header">
+            Tecnología
+          </div>
+          <ul class="list-group list-group-flush">
+            <a class="list-group-item list-group-item-action" href="#" id="tecnologia"></a>
+            <a class="list-group-item list-group-item-action" href="#"id="tecnologiados"></a>
+            <a class="list-group-item list-group-item-action" href="#" id="tecnologiatres"></a>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="row button">
+          <input type="button" value="Todas las Noticias" id="todaslasnoticias">
+      </div>
+
+    <div>
+      <div class="row">
+      <div class="col-sm-3 col-md-3">
+        <img src="/img/goku.png" width="100px">
+        <a href="">Goku</a>
+      </div>
+      <div class="col-sm-3 col-md-3">
+        <img src="/img/gohan.png" width="100px">
+        <a href="">Gohan</a>
+      </div>
+      <div class="col-sm-4 col-md-4">
+        <img src="/img/goten.png" width="100px">
+        <a href="">Goten</a>
+      </div>
+      <div class="col-sm-2 col-md-2">
+        <p>Email: periodico@dbz.edu.co</p>
+        <p>Twiter: @periodicodbz</p>
+        <p>Namekusei</p>
+      </div>
+      </div>
+      </div>
+  
+  <script type="text/javascript" src="/js/script.js"></script>
+</body>
+</html>
