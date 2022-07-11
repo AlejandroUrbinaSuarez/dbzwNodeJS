@@ -2,6 +2,7 @@ const input = document.querySelector("#searchInput");
 const userList = document.querySelector("#users");
 
 let users = [];
+let idClickeado = 0;
 
 window.addEventListener("DOMContentLoaded", async () => {
   userList.innerHTML = `<div class="spinner-border text-light" role="status">
